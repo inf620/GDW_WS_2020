@@ -1,7 +1,7 @@
 const exampleTrackID ='xxx';
 
 
-const SpotifyWebApi = require('./node_modules/spotify-web-api');
+const SpotifyWebApi = require('./node_modules/spotify-web-api-node');
 
 const   spotifyApi = new SpotifyWebApi({
         clientId: '<insert client id>',
@@ -24,7 +24,7 @@ spotifyApi.getAccessToken().then( //token wird geholt
   );
   
   spotifyApi.getTrack('exampleTrackID').then((function(data){
-    console.log('[Track Info] Name', data.body ,'Artist', data.artistname );
+    console.log('[Track Info] Name'+ data.body ,'Artist'+ data.artistname );
     }, function(err){
 
         console.log(err)
