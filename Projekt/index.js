@@ -24,7 +24,7 @@ spotifyApi.getAccessToken().then( //token wird geholt
   );
   
   spotifyApi.getTrack('exampleTrackID').then((function(data){
-    console.log('[Track Info] Name', data.body ,'Artist', data.artistname );
+    console.log('[Track Info] Name'+ data.body ,'Artist'+ data.artistname );
     }, function(err){
 
         console.log(err)
