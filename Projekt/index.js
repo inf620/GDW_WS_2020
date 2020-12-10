@@ -1,7 +1,7 @@
 const exampleTrackID ='xxx';
 
 
-const SpotifyWebApi = require('./node_modules/spotify-web-api');
+const SpotifyWebApi = require('./node_modules/spotify-web-api-node');
 
 const   spotifyApi = new SpotifyWebApi({
         clientId: '<insert client id>',
